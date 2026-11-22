@@ -5,7 +5,16 @@
 // - Express delivery doubles the price.
 
 function getShippingCost(country, isExpress) {
-  // your code
+  const Multipler =isExpress? 2: 1;  // your code
+  switch (country) {
+    case "OM":
+      return 2 * Multipler;
+    case "AE":
+      return 5 * Multipler;
+    default:
+      return 15 *Multipler;
+  }
+  
 }
 
 // Expected output:

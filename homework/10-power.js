@@ -6,6 +6,12 @@
 
 function power(base, exponent) {
   // your code
+  let result = 1;
+  for (let i=1; i<=exponent; i++){
+    result=result*base;
+
+  }
+  return result;
 }
 
 // Expected output:
